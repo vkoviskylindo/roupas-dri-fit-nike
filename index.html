@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nike Dri-FIT Masculino | Performance & Estilo</title>
+  <link rel="stylesheet" href="roupa.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1><i class="fas fa-check"></i> Nike Dri-FIT</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#tecnologia">Tecnologia</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Domine o Movimento</h2>
+      <p>Roupas masculinas Nike Dri-FIT: secagem rápida, respirabilidade e conforto para qualquer desafio.</p>
+      <a href="#produtos" class="btn-primary">Ver Coleção</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Atleta com Nike Dri-FIT"/>
+    </div>
+  </section>
+
+  <!-- Produtos -->
+  <section id="produtos" class="products">
+    <div class="container">
+      <h2 class="section-title">Coleção Dri-FIT Masculina</h2>
+      <div class="product-carousel">
+        <div class="carousel-track">
+          <div class="product-card">
+            <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/5f7b9b0a-5c0e-4e5e-9b0e-3f3b3b3b3b3b/camiseta-nike-dri-fit-legend.png" alt="Camiseta Dri-FIT Legend"/>
+            <h3>Camiseta Dri-FIT Legend</h3>
+            <p class="price">R$ 179,90</p>
+            <button class="btn-secondary">Adicionar</button>
+          </div>
+          <div class="product-card">
+            <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/u_126ab356-44d8-4a06-89b4-1726fdac4e3e/bermuda-nike-dri-fit-flex.png" alt="Bermuda Dri-FIT Flex"/>
+            <h3>Bermuda Dri-FIT Flex</h3>
+            <p class="price">R$ 299,90</p>
+            <button class="btn-secondary">Adicionar</button>
+          </div>
+          <div class="product-card">
+            <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/9c0f2b3d-5e4d-4f2a-8d1a-1a2b3c4d5e6f/jaqueta-nike-dri-fit-running.png" alt="Jaqueta Running"/>
+            <h3>Jaqueta Dri-FIT Running</h3>
+            <p class="price">R$ 499,90</p>
+            <button class="btn-secondary">Adicionar</button>
+          </div>
+          <div class="product-card">
+            <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/7d8e9f0a-1b2c-3d4e-5f6g-7h8i9j0k1l2m/regata-nike-dri-fit-miler.png" alt="Regata Miler"/>
+            <h3>Regata Dri-FIT Miler</h3>
+            <p class="price">R$ 149,90</p>
+            <button class="btn-secondary">Adicionar</button>
+          </div>
+        </div>
+        <button class="carousel-btn prev">&lt;</button>
+        <button class="carousel-btn next">&gt;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tecnologia -->
+  <section id="tecnologia" class="tech">
+    <div class="container">
+      <h2 class="section-title">Tecnologia Dri-FIT</h2>
+      <div class="tech-grid">
+        <div class="tech-item">
+          <i class="fas fa-wind"></i>
+          <h3>Respirabilidade Máxima</h3>
+          <p>Tecido leve que permite a circulação de ar, mantendo você fresco.</p>
+        </div>
+        <div class="tech-item">
+          <i class="fas fa-tint"></i>
+          <h3>Secagem Rápida</h3>
+          <p>Remove o suor do corpo e seca rapidamente para máximo conforto.</p>
+        </div>
+        <div class="tech-item">
+          <i class="fas fa-running"></i>
+          <h3>Movimento Livre</h3>
+          <p>Construção ergonômica para acompanhar todos os seus movimentos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contact">
+    <div class="container">
+      <h2 class="section-title">Fale Conosco</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Nome" required/>
+        <input type="email" placeholder="E-mail" required/>
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button type="submit" class="btn-primary">Enviar</button>
+      </form>
+      <p class="form-message"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Nike Dri-FIT Masculino. Todos os direitos reservados.</p>
+      <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="roupa.js"></script>
+</body>
+</html>
