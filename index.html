@@ -1,232 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Camisetas, bermudas e regatas Nike Dri-FIT Masculino com tecnologia de secagem rápida. Frete grátis acima de R$299. Pagamento seguro com PagSeguro." />
-  <title>Nike Dri-FIT Masculino | Checkout PagSeguro</title>
-
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-
-  <!-- PagSeguro -->
-  <script src="https://assets.pagseguro.com.br/checkout-kit/init.js"></script>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="roupa.css"/>
-</head>
+    <meta charset="UTF-8">
+    <title>Minha Página Inicial</title>
+    </head>
 <body>
+    <header>
+        <h1>Bem-vindo ao Meu Site!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="tecnologia.html">Tecnologia</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- WhatsApp Float -->
-  <a href="https://wa.me/5511999999999?text=Quero%20saber%20mais%20sobre%20a%20cole%C3%A7%C3%A3o%20Dri-FIT" 
-     class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
-  <!-- Carrinho Float -->
-  <div class="cart-float" onclick="openCheckout()">
-    <i class="fas fa-shopping-cart"></i>
-    <span class="cart-count">0</span>
-  </div>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <div class="logo">
-        <h1><i class="fas fa-check"></i> Nike Dri-FIT</h1>
-      </div>
-      <nav class="nav">
-        <ul>
-          <li><a href="#home">Início</a></li>
-          <li><a href="#produtos">Produtos</a></li>
-          <li><a href="#tecnologia">Tecnologia</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h2>Domine o Movimento</h2>
-        <p>Roupas masculinas Nike Dri-FIT: secagem rápida, respirabilidade e conforto para qualquer desafio.</p>
-        <a href="#produtos" class="btn-primary">Ver Coleção</a>
-      </div>
-      <div class="hero-image">
-        <img src="https://images.seeklogo.com/logo-png/30/1/nike-just-do-it-logo-png_seeklogo-304788.png" 
-             alt="Logo Nike Just Do It" loading="lazy" width="" height="500px">
-      </div>
-    </div>
-  </section>
-
-  <!-- Benefícios -->
-  <section class="benefits">
-    <div class="container">
-      <div class="benefit-grid">
-        <div class="benefit">
-          <i class="fas fa-shipping-fast"></i>
-          <h4>Frete Grátis</h4>
-          <p>Acima de R$299</p>
-        </div>
-        <div class="benefit">
-          <i class="fas fa-sync"></i>
-          <h4>Troca Fácil</h4>
-          <p>Em até 30 dias</p>
-        </div>
-        <div class="benefit">
-          <i class="fas fa-shield-alt"></i>
-          <h4>Compra Segura</h4>
-          <p>PagSeguro + SSL</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Produtos -->
-  <section id="produtos" class="products">
-    <div class="container">
-      <h2 class="section-title">Coleção Dri-FIT Masculina</h2>
-      <div class="product-carousel">
-        <button class="carousel-btn prev">&lt;</button>
-        <div class="carousel-track">
-          <!-- Produto 1 -->
-          <div class="product-card" data-name="Camiseta Dri-FIT Legend" data-price="179.90">
-            <img src="https://static.polissport.com.br/public/polissport/imagens/produtos/camiseta-nike-dri-fit-legend-6577647837da4.jpg" 
-                 alt="Camiseta Nike Dri-FIT Legend Preta" loading="lazy">
-            <h3>Camiseta Dri-FIT Legend</h3>
-            <p class="stock">Apenas 5 unid.</p>
-            <p class="price">R$ 179,90</p>
-            <button class="btn-secondary add-to-cart">Adicionar</button>
-          </div>
-          <!-- Produto 2 -->
-          <div class="product-card" data-name="Bermuda Dri-FIT Flex" data-price="299.90">
-            <img src="https://nortista.vteximg.com.br/arquivos/ids/247569-1000-1000/005353922001_-1-.jpg?v=638113259661730000" 
-                 alt="Bermuda Nike Dri-FIT Flex" loading="lazy">
-            <h3>Bermuda Dri-FIT Flex</h3>
-            <p class="stock">Apenas 3 unid.</p>
-            <p class="price">R$ 299,90</p>
-            <button class="btn-secondary add-to-cart">Adicionar</button>
-          </div>
-          <!-- Produto 3 -->
-          <div class="product-card" data-name="Jaqueta Nike SB Twill" data-price="499.90">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFL7thQpLbo2DKXsjYLb-8YY1gRFusXpFlUgkogGizsrbot3_4y28lWsaLe1Ahsc4mpgE&usqp=CAU" 
-                 alt="Jaqueta Nike SB Twill" loading="lazy">
-            <h3>Jaqueta Nike SB Twill</h3>
-            <p class="stock">Última peça!</p>
-            <p class="price">R$ 499,90</p>
-            <button class="btn-secondary add-to-cart">Adicionar</button>
-          </div>
-          <!-- Produto 4 -->
-          <div class="product-card" data-name="Regata Dri-FIT Miler" data-price="149.90">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTgKW0prpo1Psm_M5bNO5IgonigPWT_pmQQqnD-hF5t615yRDrXF9ZiHlccu8Bwfp7J4A&usqp=CAU" 
-                 alt="Regata Nike Dri-FIT Miler" loading="lazy">
-            <h3>Regata Dri-FIT Miler</h3>
-            <p class="stock">Apenas 8 unid.</p>
-            <p class="price">R$ 149,90</p>
-            <button class="btn-secondary add-to-cart">Adicionar</button>
-          </div>
-          <!-- Repetir para loop -->
-          <div class="product-card" data-name="Camiseta Dri-FIT Legend" data-price="179.90">
-            <img src="https://static.polissport.com.br/public/polissport/imagens/produtos/camiseta-nike-dri-fit-legend-6577647837da4.jpg" 
-                 alt="Camiseta Nike Dri-FIT Legend Preta" loading="lazy">
-            <h3>Camiseta Dri-FIT Legend</h3>
-            <p class="stock">Apenas 5 unid.</p>
-            <p class="price">R$ 179,90</p>
-            <button class="btn-secondary add-to-cart">Adicionar</button>
-          </div>
-        </div>
-        <button class="carousel-btn next">&gt;</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Depoimentos -->
-  <section class="testimonials">
-    <div class="container">
-      <h2 class="section-title">O que dizem nossos clientes</h2>
-      <div class="testimonial-grid">
-        <div class="testimonial">
-          <p>"Melhor camiseta pra treino pesado. Seca na hora!"</p>
-          <strong>— Pedro S., SP</strong>
-        </div>
-        <div class="testimonial">
-          <p>"Bermuda perfeita pro dia a dia e academia."</p>
-          <strong>— Lucas M., RJ</strong>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tecnologia -->
-  <section id="tecnologia" class="tech">
-    <div class="container">
-      <h2 class="section-title">Tecnologia Dri-FIT</h2>
-      <div class="tech-grid">
-        <div class="tech-item">
-          <i class="fas fa-wind"></i>
-          <h3>Respirabilidade Máxima</h3>
-          <p>Tecido leve que permite a circulação de ar.</p>
-        </div>
-        <div class="tech-item">
-          <i class="fas fa-tint"></i>
-          <h3>Secagem Rápida</h3>
-          <p>Remove o suor e seca em minutos.</p>
-        </div>
-        <div class="tech-item">
-          <i class="fas fa-running"></i>
-          <h3>Movimento Livre</h3>
-          <p>Construção ergonômica para qualquer esporte.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section id="contato" class="contact">
-    <div class="container">
-      <h2 class="section-title">Fale Conosco</h2>
-      <form id="contact-form">
-        <input type="text" placeholder="Nome" required/>
-        <input type="email" placeholder="E-mail" required/>
-        <textarea placeholder="Sua mensagem" required></textarea>
-        <button type="submit" class="btn-primary">Enviar</button>
-      </form>
-      <p class="form-message"></p>
-    </div>
-  </section>
-
-  <!-- Modal Checkout -->
-  <div id="checkout-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeCheckout()">&times;</span>
-      <h2>Seu Carrinho</h2>
-      <div id="cart-items"></div>
-      <hr>
-      <p><strong>Total: R$ <span id="cart-total">0,00</span></strong></p>
-      <button id="pay-btn" class="btn-primary">Pagar com PagSeguro</button>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Nike Dri-FIT Masculino. Todos os direitos reservados.</p>
-      <div class="social">
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="roupa.js"></script>
+    <main>
+        <h2>Início</h2>
+        <p>Conteúdo principal da página inicial.</p>
+    </main>
 </body>
 </html>
